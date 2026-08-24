@@ -452,7 +452,7 @@
   </div>
 
   <nav>
-    <a href="#ksign">ksign</a><a href="https://novadev.vip/resources/dns/novadns.mobileconfig">🛡 NovaDNS</a>
+    <a href="#sideinstaller">SideInstaller</a><a href="#ksign">ksign</a><a href="https://novadev.vip/resources/dns/novadns.mobileconfig">🛡 NovaDNS</a>
   </nav>
 
   <section class="quickstart-card">
@@ -475,6 +475,223 @@
   </div>
 
   
+      <section class="app-card" id="sideinstaller">
+        <div class="app-header">
+          <h2 class="app-title">SideInstaller</h2>
+          <span class="app-version">v0.9.0</span>
+        </div>
+        <p class="app-comment">Install sidestore locally only</p>
+        <p class="app-subtitle">Choose a certificate to install with:</p>
+        <div class="app-controls">
+          <input class="cert-filter" type="search" placeholder="Filter certificates…" aria-label="Filter certificates" />
+          <button class="row-toggle" type="button"></button>
+          <div class="quality-filter">
+            <button class="quality-chip active" type="button" data-quality="healthy" aria-pressed="true">Healthy (30d+)</button>
+            <button class="quality-chip active" type="button" data-quality="expiring" aria-pressed="true">Expiring Soon</button>
+            <button class="quality-chip" type="button" data-quality="expired" aria-pressed="false">Expired</button>
+          </div>
+        </div>
+        <div class="filter-empty">No certificates match this filter.</div>
+        <table class="cert-table">
+          <thead>
+            <tr>
+              <th>Certificate</th>
+              <th>Expiry</th>
+              <th>Install</th>
+              <th>Bundle ID</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="cert-name">Aramco Services Company</td>
+              <td><span class="expiry-badge expiry-warn" title="Expires 2026-09-24">30d left</span></td>
+              <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/sideinstaller/aramco-services-company/manifest.plist">⬇ Install</a></td>
+              <td class="bundle-id">com.frizzlem.sideinstaller.aramcoservicescompany</td>
+            </tr>
+            <tr>
+              <td class="cert-name">BOC International (China) Limited (qi ye weixin app id huiyi kuozhan)</td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2026-11-06">73d left</span></td>
+              <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/sideinstaller/boc-international-china-limited-qi-ye-weixin-app-id-huiyi-kuozhan/manifest.plist">⬇ Install</a></td>
+              <td class="bundle-id">com.frizzlem.sideinstaller.bocinternationalchinalim</td>
+            </tr>
+            <tr>
+              <td class="cert-name">BOC International (China) Limited (qi ye weixin app id kuozhan)</td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2026-11-06">73d left</span></td>
+              <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/sideinstaller/boc-international-china-limited-qi-ye-weixin-app-id-kuozhan/manifest.plist">⬇ Install</a></td>
+              <td class="bundle-id">com.frizzlem.sideinstaller.bocinternationalchinalim</td>
+            </tr>
+            <tr>
+              <td class="cert-name">BOC International (China) Limited (qi ye weixin app id tuisong kuozhan)</td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2026-11-06">73d left</span></td>
+              <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/sideinstaller/boc-international-china-limited-qi-ye-weixin-app-id-tuisong-kuozhan/manifest.plist">⬇ Install</a></td>
+              <td class="bundle-id">com.frizzlem.sideinstaller.bocinternationalchinalim</td>
+            </tr>
+            <tr>
+              <td class="cert-name">BOC International (China) Limited (qi ye weixin zhu app id)</td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2026-11-06">73d left</span></td>
+              <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/sideinstaller/boc-international-china-limited-qi-ye-weixin-zhu-app-id/manifest.plist">⬇ Install</a></td>
+              <td class="bundle-id">com.frizzlem.sideinstaller.bocinternationalchinalim</td>
+            </tr>
+            <tr>
+              <td class="cert-name">CENTRAL POWER INFORMATION TECHNOLOGY COMPANY - CENTRAL POWER CORPORATION (com.cpc.it.thinghiemdien)</td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2028-11-02">800d left</span></td>
+              <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/sideinstaller/central-power-information-technology-company-central-power-corporation-com-cpc-it-thinghiemdien/manifest.plist">⬇ Install</a></td>
+              <td class="bundle-id">com.frizzlem.sideinstaller.centralpowerinformationt</td>
+            </tr>
+            <tr>
+              <td class="cert-name">CENTRAL POWER INFORMATION TECHNOLOGY COMPANY - CENTRAL POWER CORPORATION (com.cpc.it.tracnghiemantoan)</td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2028-11-02">800d left</span></td>
+              <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/sideinstaller/central-power-information-technology-company-central-power-corporation-com-cpc-it-tracnghiemantoan/manifest.plist">⬇ Install</a></td>
+              <td class="bundle-id">com.frizzlem.sideinstaller.centralpowerinformationt</td>
+            </tr>
+            <tr>
+              <td class="cert-name">China Academy of Railway Sciences</td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2028-10-27">794d left</span></td>
+              <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/sideinstaller/china-academy-of-railway-sciences/manifest.plist">⬇ Install</a></td>
+              <td class="bundle-id">com.frizzlem.sideinstaller.chinaacademyofrailwaysci</td>
+            </tr>
+            <tr>
+              <td class="cert-name">China Telecom Corporation Limited</td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2029-02-23">913d left</span></td>
+              <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/sideinstaller/china-telecom-corporation-limited/manifest.plist">⬇ Install</a></td>
+              <td class="bundle-id">com.frizzlem.sideinstaller.chinatelecomcorporationl</td>
+            </tr>
+            <tr>
+              <td class="cert-name">China Telecom Corporation Limited (XC com ctq qmc yiban inde)</td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2029-02-23">913d left</span></td>
+              <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/sideinstaller/china-telecom-corporation-limited-xc-com-ctq-qmc-yiban-inde/manifest.plist">⬇ Install</a></td>
+              <td class="bundle-id">com.frizzlem.sideinstaller.chinatelecomcorporationl</td>
+            </tr>
+            <tr>
+              <td class="cert-name">China Telecom Corporation Limited (XC com ctq qmc yiban p)</td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2029-02-23">913d left</span></td>
+              <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/sideinstaller/china-telecom-corporation-limited-xc-com-ctq-qmc-yiban-p/manifest.plist">⬇ Install</a></td>
+              <td class="bundle-id">com.frizzlem.sideinstaller.chinatelecomcorporationl</td>
+            </tr>
+            <tr>
+              <td class="cert-name">China Telecom Corporation Limited (XC com ctq qmc yiban product)</td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2029-02-23">913d left</span></td>
+              <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/sideinstaller/china-telecom-corporation-limited-xc-com-ctq-qmc-yiban-product/manifest.plist">⬇ Install</a></td>
+              <td class="bundle-id">com.frizzlem.sideinstaller.chinatelecomcorporationl</td>
+            </tr>
+            <tr>
+              <td class="cert-name">Commission on Elections (Committee Supervision)</td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2028-04-27">611d left</span></td>
+              <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/sideinstaller/commission-on-elections-committee-supervision/manifest.plist">⬇ Install</a></td>
+              <td class="bundle-id">com.frizzlem.sideinstaller.commissiononelectionscom</td>
+            </tr>
+            <tr>
+              <td class="cert-name">Commission on Elections (Complaints Management)</td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2028-04-27">611d left</span></td>
+              <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/sideinstaller/commission-on-elections-complaints-management/manifest.plist">⬇ Install</a></td>
+              <td class="bundle-id">com.frizzlem.sideinstaller.commissiononelectionscom</td>
+            </tr>
+            <tr>
+              <td class="cert-name">Commission on Elections (United politics)</td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2028-04-27">611d left</span></td>
+              <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/sideinstaller/commission-on-elections-united-politics/manifest.plist">⬇ Install</a></td>
+              <td class="bundle-id">com.frizzlem.sideinstaller.commissiononelectionsuni</td>
+            </tr>
+            <tr>
+              <td class="cert-name">Forevermark Marketing(Shanghai ) Limited</td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2027-02-05">164d left</span></td>
+              <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/sideinstaller/forevermark-marketing-shanghai-limited/manifest.plist">⬇ Install</a></td>
+              <td class="bundle-id">com.frizzlem.sideinstaller.forevermarkmarketingshan</td>
+            </tr>
+            <tr>
+              <td class="cert-name">HSBC Bank plc</td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2028-04-29">613d left</span></td>
+              <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/sideinstaller/hsbc-bank-plc/manifest.plist">⬇ Install</a></td>
+              <td class="bundle-id">com.frizzlem.sideinstaller.hsbcbankplc</td>
+            </tr>
+            <tr>
+              <td class="cert-name">Jiangsu Simcere Pharmaceutical Co.,Ltd (workone)</td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2028-03-06">559d left</span></td>
+              <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/sideinstaller/jiangsu-simcere-pharmaceutical-co-ltd-workone/manifest.plist">⬇ Install</a></td>
+              <td class="bundle-id">com.frizzlem.sideinstaller.jiangsusimcerepharmaceut</td>
+            </tr>
+            <tr>
+              <td class="cert-name">Jiangsu Simcere Pharmaceutical Co.,Ltd (worktwo)</td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2028-03-06">559d left</span></td>
+              <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/sideinstaller/jiangsu-simcere-pharmaceutical-co-ltd-worktwo/manifest.plist">⬇ Install</a></td>
+              <td class="bundle-id">com.frizzlem.sideinstaller.jiangsusimcerepharmaceut</td>
+            </tr>
+            <tr>
+              <td class="cert-name">Moving Increasingly Interconnected Technology Co., Ltd (com.oa11)</td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2029-06-12">1022d left</span></td>
+              <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/sideinstaller/moving-increasingly-interconnected-technology-co-ltd-com-oa11/manifest.plist">⬇ Install</a></td>
+              <td class="bundle-id">com.frizzlem.sideinstaller.movingincreasinglyinterc</td>
+            </tr>
+            <tr class="best-cert-row">
+              <td class="cert-name">Moving Increasingly Interconnected Technology Co., Ltd (comoaddw) <span class="recommended-badge">Recommended</span></td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2029-06-12">1022d left</span></td>
+              <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/sideinstaller/moving-increasingly-interconnected-technology-co-ltd-comoaddw/manifest.plist">⬇ Install</a></td>
+              <td class="bundle-id">com.frizzlem.sideinstaller.movingincreasinglyinterc</td>
+            </tr>
+            <tr>
+              <td class="cert-name">National Oilwell Varco, Inc (Carbon LAM)</td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2029-01-25">884d left</span></td>
+              <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/sideinstaller/national-oilwell-varco-inc-carbon-lam/manifest.plist">⬇ Install</a></td>
+              <td class="bundle-id">com.frizzlem.sideinstaller.nationaloilwellvarcoincc</td>
+            </tr>
+            <tr>
+              <td class="cert-name">National Oilwell Varco, Inc (WB Carbon)</td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2029-01-25">884d left</span></td>
+              <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/sideinstaller/national-oilwell-varco-inc-wb-carbon/manifest.plist">⬇ Install</a></td>
+              <td class="bundle-id">com.frizzlem.sideinstaller.nationaloilwellvarcoincw</td>
+            </tr>
+            <tr>
+              <td class="cert-name">PowerChina International Group Limited (DoaTYw)</td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2028-10-21">788d left</span></td>
+              <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/sideinstaller/powerchina-international-group-limited-doatyw/manifest.plist">⬇ Install</a></td>
+              <td class="bundle-id">com.frizzlem.sideinstaller.powerchinainternationalg</td>
+            </tr>
+            <tr>
+              <td class="cert-name">PowerChina International Group Limited (HRU79V)</td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2028-10-21">788d left</span></td>
+              <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/sideinstaller/powerchina-international-group-limited-hru79v/manifest.plist">⬇ Install</a></td>
+              <td class="bundle-id">com.frizzlem.sideinstaller.powerchinainternationalg</td>
+            </tr>
+            <tr>
+              <td class="cert-name">PowerChina International Group Limited (iWaMrs)</td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2028-10-21">788d left</span></td>
+              <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/sideinstaller/powerchina-international-group-limited-iwamrs/manifest.plist">⬇ Install</a></td>
+              <td class="bundle-id">com.frizzlem.sideinstaller.powerchinainternationalg</td>
+            </tr>
+            <tr>
+              <td class="cert-name">PowerChina International Group Limited (j3krPY)</td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2028-10-21">788d left</span></td>
+              <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/sideinstaller/powerchina-international-group-limited-j3krpy/manifest.plist">⬇ Install</a></td>
+              <td class="bundle-id">com.frizzlem.sideinstaller.powerchinainternationalg</td>
+            </tr>
+            <tr>
+              <td class="cert-name">PowerChina International Group Limited (nj61nO)</td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2028-10-21">788d left</span></td>
+              <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/sideinstaller/powerchina-international-group-limited-nj61no/manifest.plist">⬇ Install</a></td>
+              <td class="bundle-id">com.frizzlem.sideinstaller.powerchinainternationalg</td>
+            </tr>
+            <tr>
+              <td class="cert-name">Qingdao Rural Commercial Bank Co., Ltd</td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2028-11-14">812d left</span></td>
+              <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/sideinstaller/qingdao-rural-commercial-bank-co-ltd/manifest.plist">⬇ Install</a></td>
+              <td class="bundle-id">com.frizzlem.sideinstaller.qingdaoruralcommercialba</td>
+            </tr>
+            <tr>
+              <td class="cert-name">Viet Nam Rubber Group Limited</td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2028-10-14">781d left</span></td>
+              <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/sideinstaller/viet-nam-rubber-group-limited/manifest.plist">⬇ Install</a></td>
+              <td class="bundle-id">com.frizzlem.sideinstaller.vietnamrubbergrouplimite</td>
+            </tr>
+            <tr>
+              <td class="cert-name">XL AXIATA, PT TBK</td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2029-02-17">908d left</span></td>
+              <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/sideinstaller/xl-axiata-pt-tbk/manifest.plist">⬇ Install</a></td>
+              <td class="bundle-id">com.frizzlem.sideinstaller.xlaxiatapttbk</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
       <section class="app-card" id="ksign">
         <div class="app-header">
           <h2 class="app-title">ksign</h2>
@@ -504,181 +721,187 @@
           <tbody>
             <tr>
               <td class="cert-name">Aramco Services Company</td>
-              <td><span class="expiry-badge expiry-ok" title="Expires 2026-09-24">32d left</span></td>
+              <td><span class="expiry-badge expiry-warn" title="Expires 2026-09-24">30d left</span></td>
               <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/ksign/aramco-services-company/manifest.plist">⬇ Install</a></td>
               <td class="bundle-id">nya.asami.ksign.aramcoservicescompany</td>
             </tr>
             <tr>
               <td class="cert-name">BOC International (China) Limited (qi ye weixin app id huiyi kuozhan)</td>
-              <td><span class="expiry-badge expiry-ok" title="Expires 2026-11-06">74d left</span></td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2026-11-06">73d left</span></td>
               <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/ksign/boc-international-china-limited-qi-ye-weixin-app-id-huiyi-kuozhan/manifest.plist">⬇ Install</a></td>
               <td class="bundle-id">nya.asami.ksign.bocinternationalchinalim</td>
             </tr>
             <tr>
               <td class="cert-name">BOC International (China) Limited (qi ye weixin app id kuozhan)</td>
-              <td><span class="expiry-badge expiry-ok" title="Expires 2026-11-06">74d left</span></td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2026-11-06">73d left</span></td>
               <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/ksign/boc-international-china-limited-qi-ye-weixin-app-id-kuozhan/manifest.plist">⬇ Install</a></td>
               <td class="bundle-id">nya.asami.ksign.bocinternationalchinalim</td>
             </tr>
             <tr>
               <td class="cert-name">BOC International (China) Limited (qi ye weixin app id tuisong kuozhan)</td>
-              <td><span class="expiry-badge expiry-ok" title="Expires 2026-11-06">74d left</span></td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2026-11-06">73d left</span></td>
               <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/ksign/boc-international-china-limited-qi-ye-weixin-app-id-tuisong-kuozhan/manifest.plist">⬇ Install</a></td>
               <td class="bundle-id">nya.asami.ksign.bocinternationalchinalim</td>
             </tr>
             <tr>
               <td class="cert-name">BOC International (China) Limited (qi ye weixin zhu app id)</td>
-              <td><span class="expiry-badge expiry-ok" title="Expires 2026-11-06">74d left</span></td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2026-11-06">73d left</span></td>
               <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/ksign/boc-international-china-limited-qi-ye-weixin-zhu-app-id/manifest.plist">⬇ Install</a></td>
               <td class="bundle-id">nya.asami.ksign.bocinternationalchinalim</td>
             </tr>
             <tr>
               <td class="cert-name">CENTRAL POWER INFORMATION TECHNOLOGY COMPANY - CENTRAL POWER CORPORATION (com.cpc.it.thinghiemdien)</td>
-              <td><span class="expiry-badge expiry-ok" title="Expires 2028-11-02">801d left</span></td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2028-11-02">800d left</span></td>
               <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/ksign/central-power-information-technology-company-central-power-corporation-com-cpc-it-thinghiemdien/manifest.plist">⬇ Install</a></td>
               <td class="bundle-id">nya.asami.ksign.centralpowerinformationt</td>
             </tr>
             <tr>
               <td class="cert-name">CENTRAL POWER INFORMATION TECHNOLOGY COMPANY - CENTRAL POWER CORPORATION (com.cpc.it.tracnghiemantoan)</td>
-              <td><span class="expiry-badge expiry-ok" title="Expires 2028-11-02">801d left</span></td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2028-11-02">800d left</span></td>
               <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/ksign/central-power-information-technology-company-central-power-corporation-com-cpc-it-tracnghiemantoan/manifest.plist">⬇ Install</a></td>
               <td class="bundle-id">nya.asami.ksign.centralpowerinformationt</td>
             </tr>
             <tr>
               <td class="cert-name">China Academy of Railway Sciences</td>
-              <td><span class="expiry-badge expiry-ok" title="Expires 2028-10-27">796d left</span></td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2028-10-27">794d left</span></td>
               <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/ksign/china-academy-of-railway-sciences/manifest.plist">⬇ Install</a></td>
               <td class="bundle-id">nya.asami.ksign.chinaacademyofrailwaysci</td>
             </tr>
             <tr>
               <td class="cert-name">China Telecom Corporation Limited</td>
-              <td><span class="expiry-badge expiry-ok" title="Expires 2029-02-23">915d left</span></td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2029-02-23">913d left</span></td>
               <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/ksign/china-telecom-corporation-limited/manifest.plist">⬇ Install</a></td>
               <td class="bundle-id">nya.asami.ksign.chinatelecomcorporationl</td>
             </tr>
             <tr>
               <td class="cert-name">China Telecom Corporation Limited (XC com ctq qmc yiban inde)</td>
-              <td><span class="expiry-badge expiry-ok" title="Expires 2029-02-23">915d left</span></td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2029-02-23">913d left</span></td>
               <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/ksign/china-telecom-corporation-limited-xc-com-ctq-qmc-yiban-inde/manifest.plist">⬇ Install</a></td>
               <td class="bundle-id">nya.asami.ksign.chinatelecomcorporationl</td>
             </tr>
             <tr>
               <td class="cert-name">China Telecom Corporation Limited (XC com ctq qmc yiban p)</td>
-              <td><span class="expiry-badge expiry-ok" title="Expires 2029-02-23">915d left</span></td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2029-02-23">913d left</span></td>
               <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/ksign/china-telecom-corporation-limited-xc-com-ctq-qmc-yiban-p/manifest.plist">⬇ Install</a></td>
               <td class="bundle-id">nya.asami.ksign.chinatelecomcorporationl</td>
             </tr>
             <tr>
               <td class="cert-name">China Telecom Corporation Limited (XC com ctq qmc yiban product)</td>
-              <td><span class="expiry-badge expiry-ok" title="Expires 2029-02-23">915d left</span></td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2029-02-23">913d left</span></td>
               <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/ksign/china-telecom-corporation-limited-xc-com-ctq-qmc-yiban-product/manifest.plist">⬇ Install</a></td>
               <td class="bundle-id">nya.asami.ksign.chinatelecomcorporationl</td>
             </tr>
             <tr>
               <td class="cert-name">Commission on Elections (Committee Supervision)</td>
-              <td><span class="expiry-badge expiry-ok" title="Expires 2028-04-27">613d left</span></td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2028-04-27">611d left</span></td>
               <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/ksign/commission-on-elections-committee-supervision/manifest.plist">⬇ Install</a></td>
               <td class="bundle-id">nya.asami.ksign.commissiononelectionscom</td>
             </tr>
             <tr>
               <td class="cert-name">Commission on Elections (Complaints Management)</td>
-              <td><span class="expiry-badge expiry-ok" title="Expires 2028-04-27">613d left</span></td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2028-04-27">611d left</span></td>
               <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/ksign/commission-on-elections-complaints-management/manifest.plist">⬇ Install</a></td>
               <td class="bundle-id">nya.asami.ksign.commissiononelectionscom</td>
             </tr>
             <tr>
               <td class="cert-name">Commission on Elections (United politics)</td>
-              <td><span class="expiry-badge expiry-ok" title="Expires 2028-04-27">613d left</span></td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2028-04-27">611d left</span></td>
               <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/ksign/commission-on-elections-united-politics/manifest.plist">⬇ Install</a></td>
               <td class="bundle-id">nya.asami.ksign.commissiononelectionsuni</td>
             </tr>
             <tr>
               <td class="cert-name">Forevermark Marketing(Shanghai ) Limited</td>
-              <td><span class="expiry-badge expiry-ok" title="Expires 2027-02-05">166d left</span></td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2027-02-05">164d left</span></td>
               <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/ksign/forevermark-marketing-shanghai-limited/manifest.plist">⬇ Install</a></td>
               <td class="bundle-id">nya.asami.ksign.forevermarkmarketingshan</td>
             </tr>
             <tr>
+              <td class="cert-name">HSBC Bank plc</td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2028-04-29">613d left</span></td>
+              <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/ksign/hsbc-bank-plc/manifest.plist">⬇ Install</a></td>
+              <td class="bundle-id">nya.asami.ksign.hsbcbankplc</td>
+            </tr>
+            <tr>
               <td class="cert-name">Jiangsu Simcere Pharmaceutical Co.,Ltd (workone)</td>
-              <td><span class="expiry-badge expiry-ok" title="Expires 2028-03-06">561d left</span></td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2028-03-06">559d left</span></td>
               <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/ksign/jiangsu-simcere-pharmaceutical-co-ltd-workone/manifest.plist">⬇ Install</a></td>
               <td class="bundle-id">nya.asami.ksign.jiangsusimcerepharmaceut</td>
             </tr>
             <tr>
               <td class="cert-name">Jiangsu Simcere Pharmaceutical Co.,Ltd (worktwo)</td>
-              <td><span class="expiry-badge expiry-ok" title="Expires 2028-03-06">561d left</span></td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2028-03-06">559d left</span></td>
               <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/ksign/jiangsu-simcere-pharmaceutical-co-ltd-worktwo/manifest.plist">⬇ Install</a></td>
               <td class="bundle-id">nya.asami.ksign.jiangsusimcerepharmaceut</td>
             </tr>
             <tr>
               <td class="cert-name">Moving Increasingly Interconnected Technology Co., Ltd (com.oa11)</td>
-              <td><span class="expiry-badge expiry-ok" title="Expires 2029-06-12">1024d left</span></td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2029-06-12">1022d left</span></td>
               <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/ksign/moving-increasingly-interconnected-technology-co-ltd-com-oa11/manifest.plist">⬇ Install</a></td>
               <td class="bundle-id">nya.asami.ksign.movingincreasinglyinterc</td>
             </tr>
             <tr class="best-cert-row">
               <td class="cert-name">Moving Increasingly Interconnected Technology Co., Ltd (comoaddw) <span class="recommended-badge">Recommended</span></td>
-              <td><span class="expiry-badge expiry-ok" title="Expires 2029-06-12">1024d left</span></td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2029-06-12">1022d left</span></td>
               <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/ksign/moving-increasingly-interconnected-technology-co-ltd-comoaddw/manifest.plist">⬇ Install</a></td>
               <td class="bundle-id">nya.asami.ksign.movingincreasinglyinterc</td>
             </tr>
             <tr>
               <td class="cert-name">National Oilwell Varco, Inc (Carbon LAM)</td>
-              <td><span class="expiry-badge expiry-ok" title="Expires 2029-01-25">886d left</span></td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2029-01-25">884d left</span></td>
               <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/ksign/national-oilwell-varco-inc-carbon-lam/manifest.plist">⬇ Install</a></td>
               <td class="bundle-id">nya.asami.ksign.nationaloilwellvarcoincc</td>
             </tr>
             <tr>
               <td class="cert-name">National Oilwell Varco, Inc (WB Carbon)</td>
-              <td><span class="expiry-badge expiry-ok" title="Expires 2029-01-25">886d left</span></td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2029-01-25">884d left</span></td>
               <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/ksign/national-oilwell-varco-inc-wb-carbon/manifest.plist">⬇ Install</a></td>
               <td class="bundle-id">nya.asami.ksign.nationaloilwellvarcoincw</td>
             </tr>
             <tr>
               <td class="cert-name">PowerChina International Group Limited (DoaTYw)</td>
-              <td><span class="expiry-badge expiry-ok" title="Expires 2028-10-21">789d left</span></td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2028-10-21">788d left</span></td>
               <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/ksign/powerchina-international-group-limited-doatyw/manifest.plist">⬇ Install</a></td>
               <td class="bundle-id">nya.asami.ksign.powerchinainternationalg</td>
             </tr>
             <tr>
               <td class="cert-name">PowerChina International Group Limited (HRU79V)</td>
-              <td><span class="expiry-badge expiry-ok" title="Expires 2028-10-21">789d left</span></td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2028-10-21">788d left</span></td>
               <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/ksign/powerchina-international-group-limited-hru79v/manifest.plist">⬇ Install</a></td>
               <td class="bundle-id">nya.asami.ksign.powerchinainternationalg</td>
             </tr>
             <tr>
               <td class="cert-name">PowerChina International Group Limited (iWaMrs)</td>
-              <td><span class="expiry-badge expiry-ok" title="Expires 2028-10-21">789d left</span></td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2028-10-21">788d left</span></td>
               <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/ksign/powerchina-international-group-limited-iwamrs/manifest.plist">⬇ Install</a></td>
               <td class="bundle-id">nya.asami.ksign.powerchinainternationalg</td>
             </tr>
             <tr>
               <td class="cert-name">PowerChina International Group Limited (j3krPY)</td>
-              <td><span class="expiry-badge expiry-ok" title="Expires 2028-10-21">789d left</span></td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2028-10-21">788d left</span></td>
               <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/ksign/powerchina-international-group-limited-j3krpy/manifest.plist">⬇ Install</a></td>
               <td class="bundle-id">nya.asami.ksign.powerchinainternationalg</td>
             </tr>
             <tr>
               <td class="cert-name">PowerChina International Group Limited (nj61nO)</td>
-              <td><span class="expiry-badge expiry-ok" title="Expires 2028-10-21">789d left</span></td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2028-10-21">788d left</span></td>
               <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/ksign/powerchina-international-group-limited-nj61no/manifest.plist">⬇ Install</a></td>
               <td class="bundle-id">nya.asami.ksign.powerchinainternationalg</td>
             </tr>
             <tr>
               <td class="cert-name">Qingdao Rural Commercial Bank Co., Ltd</td>
-              <td><span class="expiry-badge expiry-ok" title="Expires 2028-11-14">813d left</span></td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2028-11-14">812d left</span></td>
               <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/ksign/qingdao-rural-commercial-bank-co-ltd/manifest.plist">⬇ Install</a></td>
               <td class="bundle-id">nya.asami.ksign.qingdaoruralcommercialba</td>
             </tr>
             <tr>
               <td class="cert-name">Viet Nam Rubber Group Limited</td>
-              <td><span class="expiry-badge expiry-ok" title="Expires 2028-10-14">782d left</span></td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2028-10-14">781d left</span></td>
               <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/ksign/viet-nam-rubber-group-limited/manifest.plist">⬇ Install</a></td>
               <td class="bundle-id">nya.asami.ksign.vietnamrubbergrouplimite</td>
             </tr>
             <tr>
               <td class="cert-name">XL AXIATA, PT TBK</td>
-              <td><span class="expiry-badge expiry-ok" title="Expires 2029-02-17">909d left</span></td>
+              <td><span class="expiry-badge expiry-ok" title="Expires 2029-02-17">908d left</span></td>
               <td><a class="install-btn" href="itms-services://?action=download-manifest&url=https://nikossrcs2.github.io/summit/ksign/xl-axiata-pt-tbk/manifest.plist">⬇ Install</a></td>
               <td class="bundle-id">nya.asami.ksign.xlaxiatapttbk</td>
             </tr>
@@ -689,7 +912,7 @@
   <section class="status-panel" id="status">
     <h2>Source Health</h2>
     <div class="status-topline">
-      <div class="status-updated">Last built: <time id="last-updated" datetime="">2026-08-23 08:11 UTC</time></div>
+      <div class="status-updated">Last built: <time id="last-updated" datetime="">2026-08-24 20:23 UTC</time></div>
     </div>
     <ul class="health-list">
       <li class="health-item">
@@ -729,7 +952,7 @@
   </section>
 
   <footer>
-    Auto-deployed from <code>nikossrcs2/summit</code> · 2026-08-23 08:11 UTC
+    Auto-deployed from <code>nikossrcs2/summit</code> · 2026-08-24 20:23 UTC
     · <a href="https://github.com/nikossrcs2/summit" target="_blank" rel="noopener">Source</a>
     <br /><span style="font-size:.7rem;color:#555;margin-top:.3rem;display:inline-block;">UI by <a href="https://github.com/newbbd/ipa-distributor" target="_blank" rel="noopener" style="color:#666;">newbbd</a></span>
     <br /><span style="font-size:.7rem;color:#555;margin-top:.3rem;display:inline-block;">Special thanks to Carl, Gurt, Moon (name recommendation) and pizzaman for being silly and eating the code</a></span>
@@ -739,7 +962,7 @@
   (function () {
     const cards = Array.from(document.querySelectorAll('.app-card'));
     const navLinks = Array.from(document.querySelectorAll('nav a'));
-    const APP_IDS = ["ksign"];
+    const APP_IDS = ["sideinstaller", "ksign"];
     const INITIAL_ROWS = 12;
     const MOBILE_INITIAL_ROWS = 6;
 
