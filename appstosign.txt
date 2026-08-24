@@ -1,2 +1,3 @@
 nyasami/ksign //the best signer out there - comes pre loaded with a cert
 nikos-projects/playbox //my own app
+FrizzleM/SideInstaller //Install sidestore locally only
