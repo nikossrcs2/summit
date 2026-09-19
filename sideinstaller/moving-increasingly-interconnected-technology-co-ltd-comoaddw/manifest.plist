@@ -20,7 +20,7 @@
         <key>bundle-identifier</key>
         <string>com.frizzlem.sideinstaller.movingincreasinglyinterc</string>
         <key>bundle-version</key>
-        <string>1.1.10</string>
+        <string>1.1.12</string>
         <key>kind</key>
         <string>software</string>
         <key>title</key>
