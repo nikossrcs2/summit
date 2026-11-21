@@ -12,19 +12,19 @@
           <key>kind</key>
           <string>software-package</string>
           <key>url</key>
-          <string>https://nikossrcs2.github.io/summit/ksign/naveco-ltd-xms4cv/app.ipa</string>
+          <string>https://nikossrcs2.github.io/summit/sideinstaller/chengdu-railway-bureau/app.ipa</string>
         </dict>
       </array>
       <key>metadata</key>
       <dict>
         <key>bundle-identifier</key>
-        <string>nya.asami.ksign.navecoltdxms4cv</string>
+        <string>com.frizzlem.sideinstaller.chengdurailwaybureau</string>
         <key>bundle-version</key>
-        <string>1.0.12</string>
+        <string>1.2.22</string>
         <key>kind</key>
         <string>software</string>
         <key>title</key>
-        <string>ksign (NAVECO Ltd (XmS4CV))</string>
+        <string>SideInstaller (Chengdu Railway Bureau)</string>
       </dict>
     </dict>
   </array>
